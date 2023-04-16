@@ -172,6 +172,29 @@ export function ShareDialogDefault({
               Copy
             </Button>
           </div>
+          <div
+            className={clsx(styles.section, styles.shareLinkSection)}
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Button
+              icon={
+                <span>
+                  <i className="fa-brands fa-whatsapp"></i>
+                </span>
+              }
+            >
+              Send via Whatsapp
+            </Button>
+            <Button
+              icon={
+                <span>
+                  <i className="fa-regular fa-message"></i>
+                </span>
+              }
+            >
+              Send via SMS
+            </Button>
+          </div>
         </>
       ) : null}
     </div>

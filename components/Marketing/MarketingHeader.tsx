@@ -5,7 +5,6 @@ import { SignInIcon } from "../../icons";
 import { signIn } from "next-auth/react";
 import { Button } from "../../primitives/Button";
 import { Container } from "../../primitives/Container";
-import { Logo } from "../Logo";
 import styles from "./MarketingHeader.module.css";
 
 export function MarketingHeader({
@@ -15,9 +14,12 @@ export function MarketingHeader({
   return (
     <header className={clsx(className, styles.header)} {...props}>
       <Container className={styles.container}>
-        <Link href="/">
-          <Logo />
-        </Link>
+        <div>
+          <h1 className="text-3xl font-bold font-black">
+            <i className="fa-solid fa-users-rays"></i> CollabX
+          </h1>
+        </div>
+
         <Button icon={<SignInIcon />} onClick={() => signIn()}>
           Sign in
         </Button>

@@ -31,7 +31,9 @@ export function DashboardHeader({
       </div>
       <div className={styles.logo}>
         <Link href="/" className={styles.logoLink}>
-          <Logo />
+          <h1 className="text-3xl font-bold font-black">
+            <i className="fa-solid fa-users-rays"></i> CollabX
+          </h1>
         </Link>
       </div>
       <div className={styles.profile}>
